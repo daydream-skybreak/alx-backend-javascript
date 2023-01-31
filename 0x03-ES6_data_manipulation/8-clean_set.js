@@ -1,12 +1,11 @@
 const cleanSet = (set, start) => {
   const str = [];
-  const lasti = start.length - 1;
   if (start === '' || typeof start !== 'string') return '';
 
   set.forEach((i) => {
-    if (i.startsWith(start)) str.push(i.slice(lasti + 1));
+    if (i.startsWith(start)) str.push(i.slice(start.length));
   });
 
-  return [...new Set(str)].join('-');
+  return str.join('-');
 };
 export default cleanSet;
