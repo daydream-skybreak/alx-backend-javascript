@@ -3,7 +3,7 @@ const cleanSet = (set, start) => {
   if (start === '' || typeof start !== 'string') return '';
 
   set.forEach((i) => {
-    if (i.startsWith(start)) str.push(i.slice(start.length));
+    if (typeof s === 'string' && i.startsWith(start)) str.push(i.slice(start.length));
   });
 
   return str.join('-');
