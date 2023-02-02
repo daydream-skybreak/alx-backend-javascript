@@ -4,7 +4,7 @@ namespace Subjects{
     }
 
     export class Cpp extends Subjects.Subject {
-        getrequirements(): string {
+        getRequirements(): string {
             return 'Here is the list of requirement for Cpp'
         }
         getAvailableTeacher():string {
