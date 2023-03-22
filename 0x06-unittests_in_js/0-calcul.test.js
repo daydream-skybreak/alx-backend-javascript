@@ -12,6 +12,10 @@ describe('0-calcul', function () {
             assert.deepStrictEqual(val, 5)
             val = calculateNumbers(1.5, 3.7)
             assert.deepStrictEqual(val, 6)
+            val = calculateNumbers(-1.5, 3.7)
+            assert.deepStrictEqual(val, 3)
+            val = calculateNumbers(1.2, -3.7)
+            assert.deepStrictEqual(val, -3)
         });
     })
 })
